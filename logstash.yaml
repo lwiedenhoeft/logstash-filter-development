@@ -4,7 +4,7 @@
 #
 http.host: "0.0.0.0"
 path.config: /usr/share/logstash/pipeline
-log.level: debug
+# log.level: debug
 # Monitoring feature
 #
 #xpack.monitoring.elasticsearch.enabled: http://elasticsearch:9200
