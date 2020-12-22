@@ -1,0 +1,11 @@
+version: '2.4'
+ 
+services:
+    logstash:
+      image: docker.elastic.co/logstash/logstash:7.6.1
+      ports:
+        - "8080:8080"
+      command: --config.reload.automatic
+      volumes:
+        - ./logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+        - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
